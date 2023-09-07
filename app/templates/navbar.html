@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+<nav-bar>
+    <a class="logo" href="index.html">JM CONCESSIONARIA </a>
+    <div class="menu">
+    <ul class="nav-list">
+        <li> <a class="li" href="/templates/novos.html"></a>NOVOS</li>
+        <li> <a class="li" href="/templates/usados.html"></a>USADOS</li>   
+        <li> <a class="li" href="{{ url_for('cadastrarVeiculo.html') }}"></a>CADASTRAR</li>
+        {{ url_for('static', filename ='assets/imgs/logo.png') }}
+    </ul>
+    </div>
+</nav-bar>

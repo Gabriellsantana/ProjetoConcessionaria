@@ -1,0 +1,26 @@
+{% extends "base.html" %} <!-- Extender conteudo da base-->
+
+{% block content %}     <!--  Inicio Herança de templates-->
+<form action="/" method="POST" class="CadastroForm">
+    <input type="text" name="vei_tipo" placeholder="Informe o tipo do veiculo" class="inputsForm">
+    <input type="text" name="vei_marca" placeholder="Informe a marca do veiculo" class="inputsForm">
+    <input type="text" name="vei_modelo" placeholder="Informe o modelo do veiculo" class="inputsForm">
+    <input type="text" name="vei_ano_fabricacao" placeholder="Informe o ano de fabricação do veiculo" class="inputsForm">
+    <h3 class="titleInput">Qual estado do veiculo?</h3>
+    <label for="usado">Usado</label>
+    <input type="radio" name="vei_estado" class="inputsForm">
+    <label for="usado">Novo</label>
+    <input type="radio" name="vei_estado" class="inputsForm">
+    <input type="text" name="vei_cor" placeholder="Informe a cor do veiculo" class="inputsForm">
+    <input type="text" name="vei_quilometragem" placeholder="Informe A quilometragem do veiculo" class="inputsForm">
+    <h3 class="titleInput">O veiculo tem passagem em leilão?</h3>
+    <label for="usado">Sim</label>
+    <input type="radio" name="vei_passagem" class="inputsForm">
+    <label for="usado">Não</label>
+    <input type="radio" name="vei_passagem" class="inputsForm">
+
+    <button class="buttonForm">Cadastrar</button>
+</form>
+      
+       
+{% endblock %}          <!--  Fim Herança de templates-->

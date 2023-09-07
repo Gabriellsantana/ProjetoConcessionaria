@@ -1,0 +1,21 @@
+{% extends "base.html" %} <!-- Extender conteudo da base-->
+  
+{% include 'public/navbar.html' %} <!--Puxando html navbar-->
+
+
+
+
+    <main>
+        <div class="carrosel">
+            <div class="container">
+                <img src="/templates/imagens/imagem_1.jpg" alt="" class="edit_img" >
+                
+            </div>
+        </div>
+        {% block content %}     <!--  Inicio Herança de templates-->
+        
+        {% endblock %}          <!--  Fim Herança de templates-->
+    </main>
+
+   
+
